@@ -5,8 +5,13 @@
 #           moves the file to designated directory according to the extention
 #       wait for t secounds
 import time
+import os
 
-delay=3
+delay=30
+path="~/Downloads"
+downloadDir=os.path.expanduser(path)    #os.listdit cant recognise ~/   && we will not know or need to know username
 while True:
-    print ("hello world")
+    containts=os.listdir(downloadDir)
+    for i in containts:
+        print(i)
     time.sleep(delay)
