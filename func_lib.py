@@ -32,6 +32,9 @@ def destinationPath(ext: str) -> str:  # type hinting for faster readability
         case ".zip":
             path = "~/Documents/Managed"
 
+        case ".docx":
+            path = "~/Documents/Managed"
+
         case ".docs":
             path = "~/Documents/Managed"
 
@@ -42,3 +45,14 @@ def destinationPath(ext: str) -> str:  # type hinting for faster readability
             path = "~/Downloads"
 
     return path
+
+def extractExtention(fileName: str)->str:
+    dotPos=0    # full name if "." not present
+    for i in range (len(fileName)-1,-1,-1) : # remember ranges stops at one element before
+        if fileName[i] == ".":
+            dotPos=i
+            break
+        else:
+            continue
+
+    return (fileName[dotPos:])
