@@ -6,6 +6,7 @@
 #       wait for t secounds
 import time
 import os
+from func_lib import destinationPath
 
 def extractExtention(fileName):
     for i in range (len(fileName)-1,-1,-1) : # remember ranges stops at one element before
@@ -23,5 +24,5 @@ downloadDir=os.path.expanduser(path)    #os.listdit cant recognise ~/   && we wi
 while True:
     containts=os.listdir(downloadDir)
     for i in containts:
-        print(extractExtention(i))
+        print(extractExtention(i), " > ", destinationPath(extractExtention(i)))
     time.sleep(delay)
