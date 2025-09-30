@@ -3,46 +3,46 @@
 def destinationPath(ext: str) -> str:  # type hinting for faster readability
     match ext:
         case ".png":
-            path = "~/Pictures/Managed"
+            path = "~/Pictures/Managed/"
 
         case ".jpg":
-            path = "~/Pictures/Managed"
+            path = "~/Pictures/Managed/"
 
         case ".jpeg":
-            path = "~/Pictures/Managed"
+            path = "~/Pictures/Managed/"
 
         case ".svg":
-            path = "~/Pictures/Managed"
+            path = "~/Pictures/Managed/"
 
         case ".webp":
-            path = "~/Pictures/Managed"
+            path = "~/Pictures/Managed/"
 
         case ".mp4":
-            path = "~/Videos/Managed"
+            path = "~/Videos/Managed/"
 
         case ".pdf":
-            path = "~/Documents/Managed"
+            path = "~/Documents/Managed/"
 
         case ".tar":
-            path = "~/Documents/Managed"
+            path = "~/Documents/Managed/"
 
         case ".gz":
-            path = "~/Documents/Managed"
+            path = "~/Documents/Managed/"
 
         case ".zip":
-            path = "~/Documents/Managed"
+            path = "~/Documents/Managed/"
 
         case ".docx":
-            path = "~/Documents/Managed"
+            path = "~/Documents/Managed/"
 
         case ".docs":
-            path = "~/Documents/Managed"
+            path = "~/Documents/Managed/"
 
         case ".odf":
-            path = "~/Documents/Managed"
+            path = "~/Documents/Managed/"
 
         case _:
-            path = "~/Downloads"
+            path = "~/Downloads/"
 
     return path
 

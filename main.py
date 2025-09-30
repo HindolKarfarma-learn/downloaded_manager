@@ -6,6 +6,7 @@
 #       wait for t secounds
 import time
 import os
+import shutil
 from func_lib import destinationPath, extractExtention
 
 delay=30
@@ -14,5 +15,7 @@ downloadDir=os.path.expanduser(path)    #os.listdit cant recognise ~/   && we wi
 while True:
     containts = os.listdir(downloadDir)
     for i in containts:
-        print(extractExtention(i), " > ", destinationPath(extractExtention(i)))
+        extention=extractExtention(i)
+        destinationDir=os.path.expanduser(destinationPath(extention))
+        print(i, "-> ", shutil.move(downloadDir+i,destinationDir+i))
     time.sleep(delay)
