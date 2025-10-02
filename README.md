@@ -9,3 +9,5 @@ I am using zed as code editor on a linux system.
 Python 3.13.7
 Fedora 42
 Zed 0.199.6
+
+Anybody trying to lern Forking or Mearging or trying to add anything Plese make an issue on issue tracker tab
