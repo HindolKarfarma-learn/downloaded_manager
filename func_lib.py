@@ -56,3 +56,6 @@ def extractExtention(fileName: str)->str:
             continue
 
     return (fileName[dotPos:])
+
+def noChange (fileName: str)->None:
+    print(f"{fileName} -> Downloads (not moved) ")
